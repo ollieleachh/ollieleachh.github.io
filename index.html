@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Revision Kiosk</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<style media="screen">
+		.bold {
+			font-weight: bold;
+		}
+		.i2 {
+			text-indent: 20px;
+		}
+		.i4 {
+			text-indent: 40px;
+		}
+		.i6 {
+			text-indent: 60px;
+		}
+	</style>
+</head>
+<body class="grey lighten-4">
+	 <nav>
+    <div class="nav-wrapper blue darken-2">
+      <a href="#!" class="brand-logo center" style="padding-left: 20px;">Revision Kiosk</a>
+    </div>
+  </nav>
+   <ul class="collapsible" id="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">storage</i>File Management</div>
+      <div class="collapsible-body">
+				<ul>
+					<li style="font-weight: bold;">Root Folder</li>
+					<li style="text-indent: 20px;">&quot;Starting&quot; folder on all storage mediums</li>
+					<li style="text-indent: 40px;">E.g. &lpar;C&colon;&bsol;&rpar; on Windows machines</li>
+					<li style="text-indent: 40px;">&quot;&sol;&quot; on Mac and Linux machines</li>
+					<li style="text-indent: 20px;">Seperate directories can be created here</li>
+					<li style="text-indent: 20px;">Usually managed by the <a href="#" id="osOnClick">OS</a></li>
+					<li>&nbsp;</li>
+					<li style="font-weight: bold;">Filenames</li>
+						<li style="text-indent: 20px;">Have two parts to them - filename and extension</li>
+						<li style="text-indent: 20px;">Can be up to 255 characters in length</li>
+						<li style="text-indent: 20px;">Extension is determined by the creation software</li>
+						<li style="text-indent: 40px;">E.g. - .docx is a Microsoft Word document and .html is a web page</li>
+						<li style="text-indent: 20px;">Filenames disallow special characters like &sol;</li>
+						<li>&nbsp;</li>
+						<li style="font-weight: bold;">File Security</li>
+						<li style="text-indent: 20px;">Files can be encrypted or password protected</li>
+						<li style="text-indent: 20px;">The entire hard drive can be encrypted, which requires a password to decrypt it on startup</li>
+						<li>&nbsp;</li>
+						<li style="font-weight: bold;">Directories</li>
+						<li style="text-indent: 20px;">Also called folders</li>
+						<li style="text-indent: 20px;">Allow you to store other files and directories in them</li>
+						<li style="text-indent: 20px;">The file path &lpar;showed in the address bar&rpar; is determined by which folders are opened</li>
+						<li style="text-indent: 20px;">The folder path for program files on Windows is C&colon;&bsol;Program Files</li>
+						<li style="text-indent: 20px;">On Mac, the folder for a users applications would be &sol;Users&sol;user&sol;Applications</li>
+
+				</ul>
+      	<p>Textbook pages 202-7</p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">screen_share</i>Presentation Software</div>
+      <div class="collapsible-body">
+				<ul>
+					<li style="font-weight: bold;">Slide Creation</li>
+					<li style="text-indent: 20px;">Presentations and slides are created in software such as PowerPoint or <a href="https://slides.google.com" target="_blank">Google Slides</a></li>
+					<li style="text-indent: 20px;">Text, audio, video, hyperlinks and more can be added to slides</li>
+					<li style="text-indent: 20px;">Often are used as a visual aid for a speech</li>
+					<li>&nbsp;</li>
+					<li style="font-weight: bold;">Presentation features</li>
+					<li style="text-indent: 20px;">Presentations can be viewed on an external monitor with presenter view</li>
+					<li style="text-indent: 40px;">This means that the slides are displayed on the monitor but notes or the next slide can be showed on the primary screen</li>
+					<li style="text-indent: 20px;">Timing can also be rehearsed for presentations so that it can move slides along without prompts</li>
+				</ul>
+				<p>Textbook pages 248-61</p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">devices_other</i>Devices</div>
+      <div class="collapsible-body">
+
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">device_hub</i>Hardware</div>
+      <div class="collapsible-body">
+				<ul>
+					<li class="bold">Input and Output peripherlas</li>
+					<li class="i2">Textbook Page 22</li>
+					<li><p><a href="https://www.bbc.com/education/guides/zqg9q6f/revision" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize</a></p></li>
+					<li>&nbsp;</li>
+					<li class="bold">Storage Peripherals</li>
+					<li class="i2">Textbook Page 38</li>
+					<li><p><a href="https://www.bbc.com/education/guides/z7rk7ty/revision/3" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize</a></p></li>
+					<li>&nbsp;</li>
+					<li class="bold">Memory</li>
+					<li class="i2">Textbook Pages 16/59</li>
+					<li><p><a href="https://www.bbc.com/education/guides/z7rk7ty/revision/1" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize</a></p></li>
+				</ul>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">apps</i>Software</div>
+      <div class="collapsible-body">
+				<ul>
+					<li style="font-weight: bold;">Systems Software</li>
+					<li style="text-indent: 20px;">Type of software that runs computer hardware and programs</li>
+					<li style="text-indent: 20px;">Provide basic functionality so that users don&apos;t have to write their own programs</li>
+					<li style="text-indent: 20px;">Designed to maintain&sol;operate the OS</li>
+					<li>&nbsp;</li>
+					<li style="font-weight: bold;">Operating Systems</li>
+					<li style="text-indent: 20px;">What is shown on a screen</li>
+					<li style="text-indent: 20px;">Manages system and hardware resources</li>
+					<li style="text-indent: 20px;">All services require an OS to function</li>
+					<li style="text-indent: 20px;">Operating Systems include <a href="https://www.microsoft.com/en-gb/windows" target="_blank">Microsoft Windows</a>, <a href="https://www.apple.com/macos/" target="_blank">Mac OS</a>, <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a></li>
+					<li style="text-indent: 40px;">There are lots of different variants of Linux, some of these include - <a href="https://www.ubuntu.com" target="_blank">Ubuntu</a>, <a href="https://linuxmint.com" target="_blank">Linux Mint</a></li>
+					<li style="text-indent: 20px;">Single-user operating systems allow for only one general user</li>
+					<li style="text-indent: 40px;">Often found in household appliances</li>
+					<li style="text-indent: 40px;">They only allow one user to customise it</li>
+					<li style="text-indent: 20px;">Network Operating Systems allow multiple users to login by sending the login request to a server</li>
+					<li style="text-indent: 40px;">Seperate accounts so users cannot access each other&apos;s files</li>
+					<li style="text-indent: 40px;">Can be used to access shared network drives, printers etc</li>
+					<li style="text-indent: 40px;">They will most often have an ADFS server that will act as a SSO service in organisations</li>
+					<li style="text-indent: 60px;">This allows for Single Sign On, once a user is signed in once, they will not need to sign into other services</li>
+					<li style="text-indent: 60px;">E.g. Office 365, Box, Slack</li>
+					<li style="text-indent: 40px;">ADFS stands for Active Directory Federation Service</li>
+					<li><p><a href="https://www.bbc.com/education/guides/ztcdtfr/revision" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize 1</a>
+					<a href="https://www.bbc.com/education/guides/z8vrd2p/revision" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize 2</a></p></li>
+					<li>&nbsp;</li>
+					<li class="bold">Application Software</li>
+					<li class="i2">Applications are programs that complete different tasks</li>
+					<li class="i2">Examples of this are - Microsoft Word, Photoshop, Skype, Atom, Sequel Pro</li>
+					<li class="i2">Google Chrome is an Internet Browser</li>
+					<li class="i2">Microsoft Word is a word processor</li>
+					<li class="i2">Programs are instructions that are executed by the processor</li>
+					<li class="i2">These applications are written in a <span class="bold">programming language</span> such as C&num; or Swift</li>
+					<li>&nbsp;</li>
+					<li class="bold">Utility&sol;System Tools Software</li>
+					<li class="i2">Examples of these are antiviruses, disk tools, backup software</li>
+					<li class="i2">They can also be system accessories - such as volume control</li>
+					<li class="i2">Software designed to analyse, configure and optimise a computer</li>
+					<li>&nbsp;</li>
+					<li class="bold">Software Licensing</li>
+					<li class="i2">Licenses for software is a way of the developer checking that the user has a genuine copy of the software</li>
+					<li class="i2">It prevents software being re-sold as it requires a license to be activated</li>
+      	</ul>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">graphic_eq</i>Graphics</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">chat</i>Digital Communications</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">dns</i>Databases</div>
+      <div class="collapsible-body">
+		<h5 class="blue-text text-darken-5">Data and information</h5>
+		<ul>
+			<li>Storing data in a logical way</li>
+			<li>Stored digitally</li>
+			<li>Tables have to be created to store data</li>
+			<li>Planning has to be done to acknowledge where data goes</li>
+			<li>Fields are &apos;categories&apos; that are set up</li>
+			<li>Each table has to have a primary key</li>
+			<li>Foreign key - primary key from another table</li>
+		</ul>
+	<p>Textbook Page 307</p>
+	<a href="https://www.bbc.com/education/guides/zkfbkqt" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize</a><br/>
+	<h5 class="blue-text text-darken-5">Data validation</h5>
+	<ul>
+		<li>Presence - making sure a field hasn&apos;t been left blank</li>
+		<li>Type - tests if the data entered matches the field&apos;s data type</li>
+		<li>Length - tests if the correct number of characters have been entered</li>
+		<li>Range - tests if the data is between two specific values</li>
+	</ul>
+	<p>Textbook Page 315</p>
+	<a href="https://www.bbc.com/education/guides/zdvrd2p/revision" target="_blank" class="btn blue darken-2 waves-effect waves-light">BBC Bitesize</a><br/>
+	<h5 class="blue-text text-darken-5">Data Verification</h5>
+	<ul>
+		<li>Checking that the data that is inputted is as accurate as it can be to the original data collection</li>
+		<li>Visual Verification</li>
+		<li>Double entry verification</li>
+		<li style="text-indent: 20px;">Typed into a computer by a user</li>
+		<li style="text-indent: 20px;">Typed into a computer by a second user</li>
+		<li style="text-indent: 20px;">Computer then checks if they match</li>
+		</ul>
+		<h5 class="blue-text text-darken-5">Data input and output</h5>
+		<ul>
+			<li>Data can be inputted from a GUI - e.g. Microsoft Access or Sequel Pro</li>
+			<li>Data can also be inputted from web interfaces - such as phpMyAdmin</li>
+			<li>Web forms can be created and hosted on servers, these can send their results to a database</li>
+			<li>Data can be outputted to reports</li>
+			<li style="text-indent: 20px;">It looks more like a document</li>
+			<li style="text-indent: 20px;">It is formatted and can have styling options changed</li>
+			<li style="text-indent: 20px;">Reports can be customised with company names, logos etc to make it look more personal</li>
+		</ul>
+		<p class="heavy">Textbook page 325</p>
+		<h5 class="blue-text text-darken-5">Database Structure</h5>
+		<ul>
+			<li>If a database has more than one table it is called a relational database</li>
+			<li>If a database has a single table it is called a flat-file database</li>
+			<p>Textbook page 308</p>
+		</ul>
+	  </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">vpn_lock</i>Securing Data</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+	<p style="margin-left: 20px;">Developed by <a href="https://app.oleach.co.uk">Oliver Leach</a><br/>Copyright &copy; 2018</p>
+
+  <script type="text/javascript">
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+	$("#osOnClick").on('click', function() {
+		var elem = document.getElementById('collapsible');
+		var instance = M.Collapsible.getInstance(elem);
+		instance.open(4);
+	});
+  </script>
+
+</body>
+</html>
